@@ -1,6 +1,6 @@
 {
 	"auth": {
-		"boyaki71616c23": {
+		"boyakif36e4cc4": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": [],
@@ -17,7 +17,7 @@
 					"defaultAuthentication": {
 						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
 						"userPoolConfig": {
-							"userPoolId": "authboyaki71616c23"
+							"userPoolId": "authboyakif36e4cc4"
 						}
 					}
 				}

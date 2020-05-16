@@ -2,7 +2,7 @@ import React, { useState, useEffect, useReducer } from 'react';
 
 import API, { graphqlOperation } from '@aws-amplify/api';
 
-import { listPostsSortedByTimestamp } from '../graphql/queries';
+import { listPosts } from '../graphql/queries';
 import { onCreatePost } from '../graphql/subscriptions';
 
 import PostList from '../components/PostList';
@@ -31,15 +31,16 @@ export default function AllPosts() {
   const [isLoading, setIsLoading] = useState(true);
 
   const getPosts = async (type, nextToken = null) => {
-    const res = await API.graphql(graphqlOperation(listPostsSortedByTimestamp, {
+    const res = await API.graphql(graphqlOperation(listPosts, {
       type: "post",
       sortDirection: 'DESC',
       limit: 20, //default = 10
       nextToken: nextToken,
     }));
+    console.log("getPosts!!");
     console.log(res);
-    dispatch({ type: type, posts: res.data.listPostsSortedByTimestamp.items })
-    setNextToken(res.data.listPostsSortedByTimestamp.nextToken);
+    dispatch({ type: type, posts: res.data.listPosts.items })
+    setNextToken(res.data.listPosts.nextToken);
     setIsLoading(false);
   }
 
