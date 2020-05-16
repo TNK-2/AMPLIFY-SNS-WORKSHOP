@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "boyakif36e4cc4_identitypool_f36e4cc4",
+    "identityPoolName": "boyaki51879a2c_identitypool_51879a2c",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "boyakif36e4cc4",
-    "userPoolName": "boyakif36e4cc4_userpool_f36e4cc4",
+    "resourceNameTruncated": "boyaki51879a2c",
+    "userPoolName": "boyaki51879a2c_userpool_51879a2c",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,9 +28,9 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "boyakif36e4cc4_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "boyaki51879a2c_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "boyakif36e4cc4",
+    "resourceName": "boyaki51879a2c",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
